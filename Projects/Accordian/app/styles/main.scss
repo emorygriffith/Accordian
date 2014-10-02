@@ -6,21 +6,66 @@
 body {
   background: #fafafa;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333;
+  color: white;
 }
 
-.hero-unit {
-  margin: 50px auto 0 auto;
-  width: 600px;
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 30px;
-  background-color: #eee;
-  border-radius: 6px;
-  padding: 60px;
-  h1 {
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: -1px;
+.container{
+  margin-top: 20px;
+  margin-left:400px;
+
+}
+
+@mixin boxes{
+  height:200px;
+  width:400px;
+  background-color: lightblue;
+}
+
+@mixin header{
+  height: 35px;
+  width: 100%;
+  background-color: darkblue;
+  padding-left:10px;
+  padding-bottom:7px;
+  display: block;
+  margin:0;
+}
+
+@mixin paragraph{
+  color:black;
+  padding:10px;
+  margin:0
+}
+
+.box1{
+  @include boxes;
+
+  h2{
+  @include header;
+  }
+  p{
+    @include paragraph;
+  }
+}
+
+.box2{
+  @include boxes;
+
+  h2{
+  @include header;
+  }
+  p{
+    @include paragraph;
+  }
+}
+
+.box3{
+  @include boxes;
+
+  h2{
+  @include header;
+  }
+  p{
+    @include paragraph;
   }
 }

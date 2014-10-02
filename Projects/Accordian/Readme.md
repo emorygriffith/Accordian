@@ -1,3 +1,5 @@
-## Yo, I'm a Readme
+## Accordian Project
 
-You should probably update me so people looking at your code have an idea what it is being used for :)
+Created with HTML, SCSS, and jQuery.
+
+Each heading is clickable: it will show the contents of its box and hide the others.
