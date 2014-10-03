@@ -1,71 +1,108 @@
- // Bourbon & Neat
+/*  // Bourbon & Neat
 @import '../../bower_components/bourbon/dist/bourbon';
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
-
 // Custom Styles
-body {
-  background: #fafafa;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: white;
+
+@mixin boxes{
+ width:400px;
+ background-color: blue;
+ overflow:hidden
 }
+
+@mixin header{
+ height: 35px;
+ background-color: darkblue;
+ padding-left:10px;
+ padding-bottom:7px;
+ display: block;
+ margin:0;
+ width:400px;
+}
+
+@mixin paragraph{
+ color:black;
+ padding:10px;
+ margin:0;
+ height:35px;
+ width:400px;
+}
+
+.container{
+ margin-top: 20px;
+ margin-left:400px;
+ width:400px;
+}
+
+.box{
+ width:400;
+ overflow:hidden;
+}
+
+.p1{
+ height:200px;
+ width:400px;
+ background-color:darkblue;
+}
+
+h2{
+ @include:header;
+}
+
+section{
+ @include paragraph;
+ color:black;
+
+} */
+
 
 .container{
   margin-top: 20px;
   margin-left:400px;
-
-}
-
-@mixin boxes{
-  height:200px;
   width:400px;
-  background-color: lightblue;
+
+
 }
 
-@mixin header{
+.box{
+  width:400;
+  background-color:grey;
+  border-radius:10px;
+}
+
+section{
+  width:400px;
+  height:35px;
+  overflow:hidden;
+  transition: height .75s ease;
+
+
+}
+
+h2{
   height: 35px;
-  width: 100%;
-  background-color: darkblue;
+  background-color: black;
   padding-left:10px;
   padding-bottom:7px;
   display: block;
   margin:0;
+  width:400px;
+  color:lime;
+  border-radius:10px;
+
+
+
+
+
 }
 
-@mixin paragraph{
-  color:black;
+.p1{
+  width:400px;
+  height:200px;
+  border-radius:10px;
+
+}
+
+.text{
   padding:10px;
-  margin:0
-}
 
-.box1{
-  @include boxes;
-
-  h2{
-  @include header;
-  }
-  p{
-    @include paragraph;
-  }
-}
-
-.box2{
-  @include boxes;
-
-  h2{
-  @include header;
-  }
-  p{
-    @include paragraph;
-  }
-}
-
-.box3{
-  @include boxes;
-
-  h2{
-  @include header;
-  }
-  p{
-    @include paragraph;
-  }
 }
