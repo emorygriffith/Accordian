@@ -1,3 +1,5 @@
-Accordian
-=========
-The Iron Yard-- This is the first project that I did using Javascript. The assignment was to create an "accordian" without using j Query "toggle" functions.
+## Accordian Project
+
+Created with HTML, SCSS, and jQuery.
+
+Each heading is clickable: it will show the contents of its box and hide the others.
